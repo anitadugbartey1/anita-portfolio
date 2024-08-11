@@ -1,17 +1,13 @@
-import Navbar from '../src/Navbar';
-import Portfolio from '../src/Portfolio'
+import React from 'react';
+import Navbar from './Navbar';
+import Portfolio from './Portfolio';
 import './App.css';
 
-
-// App Component
 function App() {
   return (
-    <>
-      <div>
-        <Navbar/>
-        <Portfolio />
-      </div>
-    </>
+    <div>
+     <p>Hello World!</p>
+    </div>
   );
 }
 
