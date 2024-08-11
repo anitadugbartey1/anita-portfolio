@@ -1,0 +1,51 @@
+/* Home.css */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient(135deg, #f3f4f6, #e4e7eb);
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .home-content {
+    max-width: 800px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .home-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .home-intro {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .home-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .home-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .home-button:hover {
+    background-color: #555;
+  }
+  

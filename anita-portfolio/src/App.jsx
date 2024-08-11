@@ -1,12 +1,13 @@
 import React from 'react';
-import Navbar from './Navbar';
-import Portfolio from './Portfolio';
+import Navbar from './Navbar'; // Note the relative path
+import Home from './Home';
 import './App.css';
 
 function App() {
   return (
     <div>
-     <p>Hello World!</p>
+      <Navbar/>
+      <Home/>
     </div>
   );
 }
