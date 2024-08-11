@@ -1,0 +1,64 @@
+/* Portfolio Styles */
+.portfolio {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 60px; /* To avoid overlap with fixed Navbar */
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section h1, section h2 {
+    color: #444;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+section p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* Home Section */
+#home {
+    background-color: #f4f4f4;
+    padding-top: 100px; /* Additional padding for introduction */
+}
+
+#home h1 {
+    font-size: 36px;
+    color: #222;
+}
+
+/* About Section */
+#about {
+    background-color: #ffffff;
+}
+
+/* Projects Section */
+#projects {
+    background-color: #f9f9f9;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #ffffff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    section h1, section h2 {
+        font-size: 24px;
+    }
+
+    section p {
+        font-size: 16px;
+    }
+}
