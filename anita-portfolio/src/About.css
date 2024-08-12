@@ -1,7 +1,13 @@
 /* About.css */
 .about {
-    background-color: #f9f9f9;
-    padding: 50px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background: #ffffff;
+    text-align: center;
+    padding: 40px;
   }
   
   .about-content {

@@ -1,9 +1,20 @@
 /* Footer.css */
-.footer {
+
+/* Ensure the footer sticks to the bottom of the viewport */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .footer {
     background-color: #fb6f92;
     color: rgb(0, 0, 0);
     padding: 20px;
     text-align: center;
+    position: relative; /* Ensure it's positioned relative to the content */
+    margin-top: auto; /* Push the footer to the bottom */
   }
   
   .footer-content {
@@ -19,10 +30,12 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex; /* Align links horizontally */
+    flex-wrap: wrap; /* Wrap links if necessary */
+    justify-content: center; /* Center links */
   }
   
   .footer-links li {
-    display: inline;
     margin: 0 10px;
   }
   
@@ -34,5 +47,17 @@
   
   .footer-link:hover {
     text-decoration: underline;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .footer-links {
+      flex-direction: column; /* Stack links vertically on smaller screens */
+      align-items: center;
+    }
+    
+    .footer-links li {
+      margin-bottom: 10px;
+    }
   }
   

@@ -1,11 +1,13 @@
 import React from 'react';
 import './About.css'; // Include this file for styling
+import anitaID from '../src/assets/huid_profile_photo-transformed.jpg'
 
 const About = () => {
   return (
     <section id="about" className="about">
       <div className="about-content">
         <h2 className="about-title">About Me</h2>
+        <img src={anitaID} alt="Anita Dugbartey" className="home-profile-pic" />
         <div className="about-text">
           <p>
             Hello! I'm Anita Dugbartey, an A.B. Candidate in Computer Science at Harvard College. My journey in the field of technology began with a passion for problem-solving and a curiosity for how things work. Over the years, I've specialized in Programming, Software Development, and Data Analysis.
@@ -21,7 +23,9 @@ const About = () => {
           </p>
         </div>
       </div>
+      
     </section>
+    
   );
 };
 
