@@ -1,13 +1,13 @@
 import React from 'react';
 import './About.css'; // Include this file for styling
-import anitaID from '../src/assets/huid_profile_photo-transformed.jpg'
+
 
 const About = () => {
   return (
     <section id="about" className="about">
       <div className="about-content">
         <h2 className="about-title">Anita's Biography</h2>
-        <img src={anitaID} alt="Anita Dugbartey" className="home-profile-pic" />
+        
         <div className="about-text">
           <p>
           Hailing from The Empire State, Anita has always been passionate about making her mark. Born to West-African immigrants, Anita has a strong drive to improve her country of Ghana and the new communities she has been exposed to as a result of her parents migration to America. Anita grew up in the South Bronx, a neighborhood that has battled issues like educational inequity and socioeconomic neglect. 
