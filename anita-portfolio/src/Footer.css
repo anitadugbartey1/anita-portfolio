@@ -1,7 +1,7 @@
 /* Footer.css */
 .footer {
-    background-color: #333;
-    color: white;
+    background-color: #fb6f92;
+    color: rgb(0, 0, 0);
     padding: 20px;
     text-align: center;
   }
@@ -27,7 +27,7 @@
   }
   
   .footer-link {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-weight: bold;
   }

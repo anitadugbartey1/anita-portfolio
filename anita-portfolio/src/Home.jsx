@@ -14,7 +14,7 @@ const Home = () => {
         <p className="home-description">
           Explore my portfolio to learn more about my skills and past experiences. Feel free to contact me for any inquiries or collaborations.
         </p>
-        <a href="#portfolio" className="home-button">View My Portfolio</a>
+        <a href="/portfolio" className="home-button">View My Portfolio</a>
       </div>
     </section>
   );
