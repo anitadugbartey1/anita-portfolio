@@ -6,10 +6,10 @@ const Home = () => {
   return (
     <section id="home" className="home">
       <div className="home-content">
-        <h1 className="home-title">Welcome to My Portfolio!</h1>
+        <h1 className="home-title">Welcome!</h1>
         <img src={anitaProfile} alt="Anita Dugbartey" className="home-profile-pic" /> {/* Use the image here */}
         <p className="home-intro">
-          Hi, I'm Anita Dugbartey, an A.B. Candidate in Computer Science at Harvard College. My specialization lies in Programming, Software Development, and Data Analysis.
+          Hello, I'm Anita Dugbartey, an A.B. Candidate in Computer Science at Harvard College. My specialization lies in Programming, Software Development, and Data Analysis.
         </p>
         <p className="home-description">
           Explore my portfolio to learn more about my skills and past experiences. Feel free to contact me for any inquiries or collaborations.
