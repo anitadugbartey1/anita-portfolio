@@ -6,20 +6,20 @@ const About = () => {
   return (
     <section id="about" className="about">
       <div className="about-content">
-        <h2 className="about-title">About Me</h2>
+        <h2 className="about-title">Anita's Biography</h2>
         <img src={anitaID} alt="Anita Dugbartey" className="home-profile-pic" />
         <div className="about-text">
           <p>
-            Hello! I'm Anita Dugbartey, an A.B. Candidate in Computer Science at Harvard College. My journey in the field of technology began with a passion for problem-solving and a curiosity for how things work. Over the years, I've specialized in Programming, Software Development, and Data Analysis.
+          Hailing from The Empire State, Anita has always been passionate about making her mark. Born to West-African immigrants, Anita has a strong drive to improve her country of Ghana and the new communities she has been exposed to as a result of her parents migration to America. Anita grew up in the South Bronx, a neighborhood that has battled issues like educational inequity and socioeconomic neglect. 
           </p>
           <p>
-            My academic journey has provided me with a strong foundation in computer science, while my hands-on projects and internships with companies like Salesforce and BlackRock have honed my skills in real-world applications. I thrive in collaborative environments and am always eager to take on new challenges.
+           Anita's first introduction to computer science came in high school when she joined a program called America On Tech. She participated in the Tech360 and Tech Flex leaders programs where she gained her first experiences in web development.
           </p>
           <p>
-            In addition to my technical skills, I am a strong advocate for continuous learning and personal growth. I regularly engage in workshops and courses to stay updated with the latest technologies and industry trends.
+            In addition to her technical skills, She is a strong advocate for continuous learning and personal growth. She regularly engages in workshops and courses to stay updated with the latest technologies and industry trends.
           </p>
           <p>
-            Outside of technology, I enjoy powerlifting and cooking. Feel free to connect with me for any opportunities, collaborations, or just to chat about tech and innovation!
+            Outside of technology, She enjoys powerlifting and cooking. Feel free to connect with her for any opportunities, collaborations, or just to chat about tech and innovation!
           </p>
         </div>
       </div>
