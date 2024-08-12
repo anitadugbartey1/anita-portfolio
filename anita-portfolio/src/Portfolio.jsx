@@ -12,8 +12,8 @@ const Portfolio = () => {
           <ul>
             <li>
               <h3>Bachelor of Arts in Computer Science</h3>
-              <p><strong>Harvard College</strong> - Expected Graduation: May 2026</p>
-              <p>Details about your studies, notable courses, and any special achievements or projects.</p>
+              <p><strong>Harvard College,</strong>  Expected Graduation: May 2026</p>
+              <p><strong>Coursework</strong>: CS 1200 (Intro to Algorithms), CS 20 (Intro to Discrete Math), CS 32 (Intro to Computer Programming 1), Stat 100 (Intro to R Programming), Applied Math 22A (Linear Algebra), CS 1070 (Systems Development for CS)</p>
             </li>
             {/* Add more education details as needed */}
           </ul>
@@ -34,12 +34,12 @@ const Portfolio = () => {
           <h2>Awards and Honors</h2>
           <ul>
             <li>
-              <h3>Outstanding Achievement Award</h3>
+              <h3>Scholarships</h3>
               <p><strong>Harvard College</strong> - Year</p>
               <p>A brief description of the award and why you received it.</p>
             </li>
             <li>
-              <h3>Scholarship Award</h3>
+              <h3>Awards</h3>
               <p><strong>United Negro College Fund</strong> - Year</p>
               <p>A brief description of the scholarship and its significance.</p>
             </li>
