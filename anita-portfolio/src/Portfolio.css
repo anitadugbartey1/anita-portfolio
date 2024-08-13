@@ -1,60 +1,81 @@
 .portfolio {
     padding: 40px;
     background-color: #f9f9f9;
-  }
-  
-  .portfolio-content {
+}
+
+.portfolio-content {
     max-width: 1200px;
     margin: 0 auto;
-  }
-  
-  .portfolio-title {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+}
+
+.portfolio-title{
     text-align: center;
-  }
-  
-  .experiences,
-  .projects {
-    margin-bottom: 40px;
-  }
-  
-  .experiences h2,
-  .projects h2 {
-    font-size: 2em;
+}
+.experiences h2,
+.projects h2,
+.awards h2,
+.skills h2,
+.education h2 {
+    font-size: 2em; /* Ensure all section titles are the same size */
     margin-bottom: 20px;
-  }
-  
-  .experiences ul,
-  .projects ul {
+    text-align: left;
+}
+
+.experiences,
+.projects,
+.awards,
+.skills,
+.education {
+    margin-bottom: 40px;
+}
+
+.experiences ul,
+.education ul,
+.skills ul,
+.projects ul,
+.awards ul {
     list-style-type: none;
     padding: 0;
-  }
-  
-  .experiences li,
-  .projects li {
+}
+
+.education li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.skills li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.experiences li,
+.projects li,
+.awards li {
     border-bottom: 1px solid #ddd;
     padding: 15px 0;
-  }
-  
-  .experiences h3,
-  .projects h3 {
+}
+
+.experiences h3,
+.projects h3,
+.awards h3 {
     font-size: 1.5em;
     margin: 0;
-  }
-  
-  .experiences p,
-  .projects p {
+}
+
+.experiences p,
+.projects p,
+.awards p {
     font-size: 1em;
     margin: 5px 0;
-  }
-  
-  .projects a {
+}
+
+.projects a,
+.awards a {
     color: #007bff;
     text-decoration: none;
-  }
-  
-  .projects a:hover {
+}
+
+.projects a:hover,
+.awards a:hover {
     text-decoration: underline;
-  }
-  
+}

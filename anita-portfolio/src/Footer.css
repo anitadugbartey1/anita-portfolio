@@ -6,7 +6,6 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
-    padding: 60px;
   }
   
   .footer {
@@ -52,13 +51,37 @@ body {
   
   /* Responsive design for smaller screens */
   @media (max-width: 768px) {
-    .footer-links {
-      flex-direction: column; /* Stack links vertically on smaller screens */
-      align-items: center;
+    .footer {
+      padding: 15px; /* Reduce padding for smaller screens */
     }
-    
+  
+    .footer-links {
+      flex-direction: row; /* Keep links in a row */
+      flex-wrap: wrap; /* Allow wrapping */
+      justify-content: space-around; /* Spread out the links */
+    }
+  
     .footer-links li {
-      margin-bottom: 10px;
+      margin: 5px 15px; /* Adjust margins for better spacing */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer {
+      padding: 10px; /* Further reduce padding */
+    }
+  
+    .footer-links {
+      flex-direction: row;
+      justify-content: center; /* Center links */
+    }
+  
+    .footer-links li {
+      margin: 5px 10px; /* Further adjust margins */
+    }
+  
+    .footer-link {
+      font-size: 0.9rem; /* Adjust font size for smaller screens */
     }
   }
   

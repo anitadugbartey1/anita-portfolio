@@ -2,7 +2,7 @@
 
 .contact {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 60px auto; /* Add margin to create space between the navbar and the footer */
     padding: 40px;
     font-family: Arial, sans-serif;
     color: #333;
@@ -48,7 +48,7 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    color:#000000;
+    color: #000000;
     background-color: #ffffff; /* Set form boxes to white */
   }
   
@@ -76,5 +76,20 @@
   
   .submit-button:hover {
     background-color: #ffb3c6;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .contact {
+      margin: 40px auto; /* Adjust margin for smaller screens */
+      padding: 30px; /* Reduce padding to fit content */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact {
+      margin: 20px auto; /* Further adjust margin for very small screens */
+      padding: 20px; /* Further reduce padding */
+    }
   }
   
