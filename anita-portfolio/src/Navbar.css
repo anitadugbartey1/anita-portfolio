@@ -42,13 +42,12 @@
     }
   
     .navbar-menu {
-      flex-direction: row; /* Keep items in a row */
-      flex-wrap: wrap; /* Allow wrapping */
-      justify-content: space-around; /* Distribute items evenly */
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items horizontally */
     }
   
     .navbar-menu li {
-      margin: 5px 10px; /* Adjust margins for smaller screens */
+      margin: 10px 0; /* Adjust margins for stacked items */
     }
   
     .navbar-menu a {
@@ -62,12 +61,12 @@
     }
   
     .navbar-menu {
-      flex-direction: row;
-      justify-content: space-between; /* Space items out */
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items horizontally */
     }
   
     .navbar-menu li {
-      margin: 5px 5px; /* Further adjust margins */
+      margin: 8px 0; /* Further adjust margins */
     }
   
     .navbar-menu a {
