@@ -20,6 +20,7 @@
     font-size: 2rem;
     color: #333;
     margin-bottom: 20px;
+    text-align: center;
   }
   
   .about-text {
@@ -32,4 +33,6 @@
   .about-text p {
     margin-bottom: 20px;
   }
+
+ 
   
