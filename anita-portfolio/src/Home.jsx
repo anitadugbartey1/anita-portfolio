@@ -1,6 +1,9 @@
 import React from 'react';
 import './Home.css'; // Include this file for styling
 import anitaProfile from '../src/assets/AnitaProfilepic.jpg'; // Correctly import the image
+import { Link } from 'react-router-dom';
+
+
 
 const Home = () => {
   return (
@@ -14,7 +17,7 @@ const Home = () => {
         <p className="home-description">
           Explore my portfolio to learn more about my skills and past experiences. Feel free to contact me for any inquiries or collaborations.
         </p>
-        <a href="/portfolio" className="home-button">View My Portfolio</a>
+        <Link to="/portfolio" className="home-button">View My Portfolio</Link>
       </div>
     </section>
   );
