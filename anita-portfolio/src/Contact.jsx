@@ -25,7 +25,7 @@ const Contact = () => {
   return (
     <div className="contact">
       <h1>Contact Me</h1>
-      <p>If you have any questions or would like to get in touch, please fill out the form below:</p>
+      <p>Note: I am currently connecting this page to a database. Please contact me with the sources linked in the footer. if you send a message, your data will be lost and I will not receive it. If you have any questions or would like to get in touch, please fill out the form below:</p>
       <form onSubmit={handleSubmit} className="contact-form">
         <div className="form-group">
           <label htmlFor="name">Name:</label>
