@@ -17,18 +17,21 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    axios.post('http://localhost:3000/api/contact', formData)
-      .then((response) => {
-        console.log('Success:', response.data);
-        // Handle success (e.g., show a success message)
-      })
-      .catch((error) => {
-        console.error('Error:', error);
-        // Handle error (e.g., show an error message)
-      });
+  
+    try {
+      const response = await axios.post(`${process.env.VITE_APP_API_URL}/api/contact`, formData);
+      if (response.status === 200) {
+        console.log('Message sent successfully');
+        setFormData({ name: '', email: '', message: '' });
+      }
+    } catch (error) {
+      console.error('Error sending message:', error);
+      setErrorMessage('Failed to send message. Please try again later.');
+    }
   };
+  
 
   return (
     <div className="contact">
