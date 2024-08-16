@@ -8,6 +8,9 @@ const Contact = () => {
     email: '',
     message: '',
   });
+  
+  const [successMessage, setSuccessMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -21,14 +24,16 @@ const Contact = () => {
     e.preventDefault();
   
     try {
-      const response = await axios.post(`${process.env.VITE_APP_API_URL}/api/contact`, formData);
+      const response = await axios.post(`${import.meta.env.VITE_APP_API_URL}/api/contact`, formData);
       if (response.status === 200) {
-        console.log('Message sent successfully');
+        setSuccessMessage('Message sent successfully!');
         setFormData({ name: '', email: '', message: '' });
+        setErrorMessage(''); // Clear error message if successful
       }
     } catch (error) {
       console.error('Error sending message:', error);
       setErrorMessage('Failed to send message. Please try again later.');
+      setSuccessMessage(''); // Clear success message if there's an error
     }
   };
   
@@ -36,7 +41,7 @@ const Contact = () => {
   return (
     <div className="contact">
       <h1>Contact Me</h1>
-      <p>Note: I am currently connecting this page to a database. Please contact me with the sources linked in the footer. if you send a message, your data will be lost and I will not receive it. If you have any questions or would like to get in touch, please fill out the form below:</p>
+      <p>Note: I am currently connecting this page to a database. Please contact me with the sources linked in the footer. If you send a message, your data will be lost and I will not receive it. If you have any questions or would like to get in touch, please fill out the form below:</p>
       <form onSubmit={handleSubmit} className="contact-form">
         <div className="form-group">
           <label htmlFor="name">Name:</label>
@@ -72,6 +77,8 @@ const Contact = () => {
         </div>
         <button type="submit" className="submit-button">Send Message</button>
       </form>
+      {successMessage && <p className="success-message">{successMessage}</p>}
+      {errorMessage && <p className="error-message">{errorMessage}</p>}
     </div>
   );
 };
