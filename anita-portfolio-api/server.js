@@ -12,10 +12,8 @@ app.post('/api/contact', async (req, res) => {
     const { name, email, message } = req.body;
   
     try {
-      const contactMessage = await prisma.contactMessage.upsert({
-        where: { email },
-        update: { name, message },
-        create: { name, email, message },
+      const contactMessage = await prisma.contactMessage.create({
+        data: { name, email, message },
       });
       res.json({ success: true, contactMessage });
     } catch (error) {
