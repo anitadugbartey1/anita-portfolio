@@ -12,12 +12,10 @@ app.post('/api/contact', async (req, res) => {
     const { name, email, message } = req.body;
   
     try {
-      const contactMessage = await prisma.contactMessage.create({
-        data: {
-          name,
-          email,
-          message,
-        },
+      const contactMessage = await prisma.contactMessage.upsert({
+        where: { email },
+        update: { name, message },
+        create: { name, email, message },
       });
       res.json({ success: true, contactMessage });
     } catch (error) {
@@ -25,6 +23,7 @@ app.post('/api/contact', async (req, res) => {
       res.status(500).json({ error: 'An error occurred while saving the message.' });
     }
   });
+  
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
