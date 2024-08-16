@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Contact.css';
+import axios from 'axios';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -18,8 +19,15 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission (e.g., send data to an API or email)
-    console.log('Form submitted:', formData);
+    axios.post('http://localhost:3000/api/contact', formData)
+      .then((response) => {
+        console.log('Success:', response.data);
+        // Handle success (e.g., show a success message)
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+        // Handle error (e.g., show an error message)
+      });
   };
 
   return (
