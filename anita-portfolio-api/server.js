@@ -26,5 +26,15 @@ app.post('/api/contact', async (req, res) => {
       res.status(500).json({ error: 'An error occurred while saving the message.' });
     }
   });
+  app.get('/api/messages', async (req, res) => {
+    try {
+      const messages = await prisma.contactMessage.findMany();
+      res.json(messages);
+    } catch (error) {
+      console.error('Error retrieving messages:', error);
+      res.status(500).json({ error: 'An error occurred while retrieving the messages.' });
+    }
+  });
+  
   
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
