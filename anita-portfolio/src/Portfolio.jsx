@@ -25,7 +25,7 @@ const Education = () => (
       <li>
         <h3>Bachelor of Arts in Computer Science</h3>
         <p><strong>Harvard College,</strong> Expected Graduation: May 2026</p>
-        <p><strong>Coursework</strong>: CS 1200 (Intro to Algorithms), CS 20 (Intro to Discrete Math), CS 32 (Intro to Computer Programming 1), Stat 100 (Intro to R Programming), CS 1710 (Visualization), Applied Math 22A (Linear Algebra), MIT 15.501 (Accounting)</p>
+        <p><strong>Coursework</strong>: CS 1200 (Intro to Algorithms), CS 20 (Intro to Discrete Math), CS 32 (Intro to Computer Programming 1), Stat 100 (Intro to R Programming), CS 61 (Systems Programming), MIT 15.501 (Accounting)</p>
       </li>
     </ul>
   </div>
